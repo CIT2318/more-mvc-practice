@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log out</title>
+</head>
+
+<body>
+<?php
+echo "<p>You've been logged out</p>";
+echo "<p><a href='login.php'>Login again</a></p>";
+?>
+</body>
+</html>
