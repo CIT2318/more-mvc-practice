@@ -17,7 +17,7 @@ function login($username,$password){
 }
 ```
 
-* Modify the other PHP files to use the *auth-fncs.php* file. For example in *login.php* you might have some code like the following that uses *auth-fns.php*:
+* Modify the other PHP files to use the *auth-fncs.php* file, just like we did with the film model last week. For example in *login.php* you might have some code like the following that uses *auth-fns.php*:
 ```php
 ...
 $username=$_POST['username'];
@@ -30,7 +30,7 @@ if(login($username,$password)){
 ...
 ```
 
-* Split the *login.php* file into a controller (*login.php*) and a view (*login-view.php*).
-* Try and implement other authentication functions (*logout()*, *isLoggedIn()*, *getUser()*) and refactor each of the pages to use separate view files. 
+* Try and implement other authentication functions (*logout()*, *isLoggedIn()*, *getUser()*) 
+* Refactor each of the pages to use separate view files. 
 
 >Why haven't we named *auth-fncs.php* *auth-model.php*? This is because the model layer is concerned with business logic. Authentication is really about web application logic. It makes sense to separate out authentication to help organise our code and remove duplication, but it isn't really a model. 
