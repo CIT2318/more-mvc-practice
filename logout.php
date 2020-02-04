@@ -1,7 +1,6 @@
 <?php
 session_start();
-require_once "auth-fns.php";
+include "auth/auth-fncs.php";
 logout();
 header( "Location: login.php" );
 ?>
-

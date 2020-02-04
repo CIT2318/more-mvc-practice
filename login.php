@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "auth-fns.php";
+include "auth/auth-fncs.php";
 
 if(isLoggedIn())
 {
@@ -10,7 +10,7 @@ if(isLoggedIn())
 		$username=$_POST['username'];
 		$password=$_POST['password'];
 		if(login($username,$password))
-		{ 
+		{
 			header( "Location: index.php" ); //successful login go to the home page
 		}else{
 			$error_msg="Wrong login details."; //incorrect username or password

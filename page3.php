@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "auth-fns.php";
+include "auth/auth-fncs.php";
 
 if(!isLoggedIn())
 {
@@ -10,4 +10,3 @@ if(!isLoggedIn())
 $username = getUser();
 require_once "views/page3-view.php";
 ?>
-
