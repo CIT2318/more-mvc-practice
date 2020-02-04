@@ -10,7 +10,7 @@ if(isset($_POST['login'])) //they have submitted the login form
 	$password=$_POST['password'];
 	if($username==="testuser" && $password === "letmein")
 	{
-		$_SESSION["username"]="testuser"; 
+		$_SESSION["username"]="testuser";
 		header( "Location: index.php" ); //successful login go to the home page
 	}else{
 		$error_msg="Wrong login details."; //incorrect username or password
